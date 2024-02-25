@@ -1,16 +1,25 @@
-# xiv_best_price
+# XIV Best Price Calculator
 
-A new Flutter project.
+## Item info
 
-## Getting Started
+Current patch: 6.5
 
-This project is a starting point for a Flutter application.
+Current materials item Level: 640
 
-A few resources to get you started if this is your first Flutter project:
+Current Tomestone: Causality
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Cracked Anthocluster: MATERIA X
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Cracked Dendrocluster: MATERIA IX
+
+Cracked Stellacluster: MATERIA VIII
+
+Cracked Planicluster: MATERIA VII
+
+## Context
+
+This app uses the Universalis Market API to find which item sells for the highest price.
+
+## License
+
+[MIT](LICENSE.txt)
