@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "itemName": "Liquid Glass",
+            "itemId": "39711",
+			"itemImageName": "Liquid_Glass.png"
+        },
+        {
+            "itemName": "Thavnairian Flux",
+            "itemId": "39712",
+			"itemImageName": "Thavnairian_Flux.png"
+        },
+        {
+            "itemName": "Grinding Fluid",
+            "itemId": "39713",
+			"itemImageName": "Grinding_Fluid.png"
+        },
+        {
+            "itemName": "Hannish Cotton",
+            "itemId": "39714",
+			"itemImageName": "Hannish_Cotton.png"
+        },
+        {
+            "itemName": "Deinosuchus Skin",
+            "itemId": "39715",
+			"itemImageName": "Deinosuchus_Skin.png"
+        },
+        {
+            "itemName": "Alche-mist",
+            "itemId": "39716",
+			"itemImageName": "Alche-mist.png"
+        }
+    ]
+}
