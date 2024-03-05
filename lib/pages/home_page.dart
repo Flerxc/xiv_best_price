@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../components/api_button.dart';
 import '../model/item.dart';
 
@@ -13,14 +14,57 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Item? currentItem;
+  Item? _currentItem;
+  List _items = [];
 
   // Callback to change the item to display
 
   void updateItem(Item newItem) {
     setState(() {
-      currentItem = newItem;
+      _currentItem = newItem;
     });
+  }
+
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('assets/data/uncapped_tomestones.json');
+    final data = await json.decode(response);
+    setState(() {
+      _items = data["items"];
+    });
+  }
+
+  Item calculateBestItem(Map<String, dynamic> items) {
+    // find item id and price
+    var sorted = items.entries.toList()
+      ..sort((a, b) => -a.value['listings'][0]['pricePerUnit']
+          .compareTo(b.value['listings'][0]['pricePerUnit']));
+
+    var bestPrice = sorted[0].value['listings'][0]['pricePerUnit'];
+
+    String id = '';
+
+    for (final item in items.entries) {
+      if (item.value['listings'][0]['pricePerUnit'] == bestPrice) {
+        id = item.key;
+      }
+    }
+
+    // find item in data
+
+    String url = '';
+
+    String name = '';
+    for (final item in _items) {
+      if (item['itemId'] == id) {
+        url = 'assets/images/${item['itemImageName']}';
+        name = item['itemName'];
+      }
+    }
+
+    // create item
+
+    return Item(name: name, id: id, price: bestPrice, url: url);
   }
 
   Future<void> fetchAPI() async {
@@ -28,6 +72,8 @@ class _HomePageState extends State<HomePage> {
         'https://universalis.app/api/v2/Jenova/39711,39712,39713,39714,39715,39716?listings=1&entries=0&fields=items.itemId,items.listings.pricePerUnit';
 
     try {
+      readJson();
+
       final response = await http.get(Uri.parse(url));
 
       if (response.statusCode == 200) {
@@ -35,17 +81,14 @@ class _HomePageState extends State<HomePage> {
 
         final items = jsonResponse['items'] as Map<String, dynamic>;
 
-        items.forEach((key, value) {
-          final listings = value['listings'] as List;
-          for (var listing in listings) {
-            print('Item ID: $key, Price per unit: ${listing['pricePerUnit']}');
-          }
-        });
+        Item item = calculateBestItem(items);
+        updateItem(item);
       } else {
-        print('failed to load data. Status code:: ${response.statusCode}');
+        throw Exception(
+            'failed to load data. Status code:: ${response.statusCode}');
       }
     } catch (e) {
-      print('Exception caught: $e');
+      throw Exception(e);
     }
   }
 
