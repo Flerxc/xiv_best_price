@@ -14,16 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Item? _currentItem;
   List _items = [];
-
-  // Callback to change the item to display
-
-  void updateItem(Item newItem) {
-    setState(() {
-      _currentItem = newItem;
-    });
-  }
 
   Future<void> readJson() async {
     final String response =
@@ -82,7 +73,51 @@ class _HomePageState extends State<HomePage> {
         final items = jsonResponse['items'] as Map<String, dynamic>;
 
         Item item = calculateBestItem(items);
-        updateItem(item);
+        showDialog(
+            context: context,
+            builder: (BuildContext context) => AlertDialog(
+                    title: const Text('Best item',
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Anta',
+                        )),
+                    content: Builder(builder: (context) {
+                      var height = MediaQuery.of(context).size.height;
+
+                      return SizedBox(
+                        height: height - 450,
+                        child: Column(
+                          children: [
+                            Text(
+                              item.name,
+                              style: const TextStyle(
+                                fontSize: 24,
+                                fontFamily: 'Anta',
+                              ),
+                            ),
+                            SizedBox(
+                                height: 150,
+                                width: 150,
+                                child:
+                                    Image.asset(item.url, fit: BoxFit.cover)),
+                            Text(
+                              item.price.toString(),
+                              style: const TextStyle(
+                                fontFamily: 'Anta',
+                                fontSize: 24,
+                              ),
+                            )
+                          ],
+                        ),
+                      );
+                    }),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Navigator.pop(context, 'OK'),
+                        child: const Text('OK'),
+                      )
+                    ]));
       } else {
         throw Exception(
             'failed to load data. Status code:: ${response.statusCode}');
@@ -115,7 +150,11 @@ class _HomePageState extends State<HomePage> {
             children: [
               const Text(
                 "Allagan Tomestone of Causality",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                  fontFamily: 'Anta',
+                ),
               ),
               SizedBox(
                 height: 100,

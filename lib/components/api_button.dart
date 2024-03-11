@@ -19,7 +19,11 @@ class APIButton extends StatelessWidget {
           child: const Text(
             'CALCULATE',
             style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 24),
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: 24,
+              fontFamily: 'Anta',
+            ),
           ),
         ),
       ),
