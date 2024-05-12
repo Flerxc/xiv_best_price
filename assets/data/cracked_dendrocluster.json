@@ -1,0 +1,39 @@
+{
+    "items": [
+        {
+            "itemName": "Piety Materia IX",
+            "itemId": "33917",
+            "itemImagename": "Materia_Yellow_IX"
+        },
+        {
+            "itemName": "Heavens' Eye Materia IX",
+            "itemId": "33918",
+            "itemImagename": "Materia_Red_IX"
+        },
+        {
+            "itemName": "Savage Aim Materia IX",
+            "itemId": "33919",
+            "itemImagename": "Materia_Red_IX"
+        },
+        {
+            "itemName": "Savage Might Materia IX",
+            "itemId": "33920",
+            "itemImagename": "Materia_Red_IX"
+        },
+        {
+            "itemName": "Battledance Materia IX",
+            "itemId": "33921",
+            "itemImagename": "Materia_Yellow_IX"
+        },
+        {
+            "itemName": "Quickarm Materia IX",
+            "itemId": "33928",
+            "itemImagename": "Materia_Purple_IX"
+        },
+        {
+            "itemName": "Quicktongue Materia IX",
+            "itemId": "33929",
+            "itemImagename": "Materia_Purple_IX"
+        }
+    ]
+}
