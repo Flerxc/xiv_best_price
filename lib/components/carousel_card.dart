@@ -14,6 +14,7 @@ class CarouselCard extends StatelessWidget {
           children: [
             Text(
               text,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 24,
