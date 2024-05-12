@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:xiv_best_price/controllers/api_controller.dart';
+import 'package:xiv_best_price/controllers/item_controller.dart';
 import '../components/api_button.dart';
+import '../components/result_dialog.dart';
 import '../model/item.dart';
-
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,117 +13,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List _items = [];
+  final ItemController _itemController = ItemController();
+  final APIController _apiController = APIController();
 
-  Future<void> readJson() async {
-    final String response =
-        await rootBundle.loadString('assets/data/uncapped_tomestones.json');
-    final data = await json.decode(response);
-    setState(() {
-      _items = data["items"];
+  void displayBestItem() {
+    _itemController.fetchBestItem(_apiController).then((Item bestItem) {
+      showDialog(
+          context: context,
+          builder: (BuildContext context) => ResultDialog(item: bestItem));
     });
-  }
-
-  Item calculateBestItem(Map<String, dynamic> items) {
-    // find item id and price
-    var sorted = items.entries.toList()
-      ..sort((a, b) => -a.value['listings'][0]['pricePerUnit']
-          .compareTo(b.value['listings'][0]['pricePerUnit']));
-
-    var bestPrice = sorted[0].value['listings'][0]['pricePerUnit'];
-
-    String id = '';
-
-    for (final item in items.entries) {
-      if (item.value['listings'][0]['pricePerUnit'] == bestPrice) {
-        id = item.key;
-      }
-    }
-
-    // find item in data
-
-    String url = '';
-
-    String name = '';
-    for (final item in _items) {
-      if (item['itemId'] == id) {
-        url = 'assets/images/${item['itemImageName']}';
-        name = item['itemName'];
-      }
-    }
-
-    // create item
-
-    return Item(name: name, id: id, price: bestPrice, url: url);
-  }
-
-  Future<void> fetchAPI() async {
-    const String url =
-        'https://universalis.app/api/v2/Jenova/39711,39712,39713,39714,39715,39716?listings=1&entries=0&fields=items.itemId,items.listings.pricePerUnit';
-
-    try {
-      readJson();
-
-      final response = await http.get(Uri.parse(url));
-
-      if (response.statusCode == 200) {
-        final jsonResponse = json.decode(response.body);
-
-        final items = jsonResponse['items'] as Map<String, dynamic>;
-
-        Item item = calculateBestItem(items);
-        showDialog(
-            context: context,
-            builder: (BuildContext context) => AlertDialog(
-                    title: const Text('Best item',
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Anta',
-                        )),
-                    content: Builder(builder: (context) {
-                      var height = MediaQuery.of(context).size.height;
-
-                      return SizedBox(
-                        height: height - 450,
-                        child: Column(
-                          children: [
-                            Text(
-                              item.name,
-                              style: const TextStyle(
-                                fontSize: 24,
-                                fontFamily: 'Anta',
-                              ),
-                            ),
-                            SizedBox(
-                                height: 150,
-                                width: 150,
-                                child:
-                                    Image.asset(item.url, fit: BoxFit.cover)),
-                            Text(
-                              item.price.toString(),
-                              style: const TextStyle(
-                                fontFamily: 'Anta',
-                                fontSize: 24,
-                              ),
-                            )
-                          ],
-                        ),
-                      );
-                    }),
-                    actions: [
-                      TextButton(
-                        onPressed: () => Navigator.pop(context, 'OK'),
-                        child: const Text('OK'),
-                      )
-                    ]));
-      } else {
-        throw Exception(
-            'failed to load data. Status code:: ${response.statusCode}');
-      }
-    } catch (e) {
-      throw Exception(e);
-    }
   }
 
   @override
@@ -163,7 +60,7 @@ class _HomePageState extends State<HomePage> {
                     fit: BoxFit.cover),
               ),
               APIButton(
-                fetchAPI: fetchAPI,
+                fetchAPI: displayBestItem,
               ),
             ],
           ),
