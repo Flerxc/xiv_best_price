@@ -30,11 +30,46 @@ class ItemController {
 
   List<dynamic> get currencies => _currencies;
 
-  Future<dynamic> _readItemFromJson(String uri) async {
+  String _getDataURI(int index) {
+    String uri = "assets/data/";
+    switch (index) {
+      case 0:
+        uri += "uncapped_tomestones.json";
+      case 1:
+        uri += "cracked_anthocluster.json";
+      case 2:
+        uri += "cracked_dendrocluster.json";
+      case 3:
+        uri += "cracked_stellacluster.json";
+      case 4:
+        uri += "cracked_planicluster.json";
+    }
+
+    return uri;
+  }
+
+  Future<dynamic> _readItemsFromJson(String uri) async {
     final String response = await rootBundle.loadString(uri);
     final data = await json.decode(response);
 
     return data["items"];
+  }
+
+  String _generateUrl(List<dynamic> items) {
+    const String baseUrl = "https://universalis.app/api/v2/Jenova/";
+
+    const String endUrl =
+        "?listings=1&entries=0&fields=items.itemId,items.listings.pricePerUnit";
+
+    String ids = "";
+
+    for (var i = 0; i < items.length - 1; i++) {
+      ids += "${items[i]['itemId']},";
+    }
+
+    ids += "${items[items.length - 1]['itemId']}";
+
+    return "$baseUrl$ids$endUrl";
   }
 
   int _findMinimumPrice(String id, List<dynamic> items) {
@@ -90,45 +125,10 @@ class ItemController {
         url: details['url']!);
   }
 
-  String _generateUrl(List<dynamic> items) {
-    const String baseUrl = "https://universalis.app/api/v2/Jenova/";
-
-    const String endUrl =
-        "?listings=1&entries=0&fields=items.itemId,items.listings.pricePerUnit";
-
-    String ids = "";
-
-    for (var i = 0; i < items.length - 1; i++) {
-      ids += "${items[i]['itemId']},";
-    }
-
-    ids += "${items[items.length - 1]['itemId']}";
-
-    return "$baseUrl$ids$endUrl";
-  }
-
-  String _getDataURI(int index) {
-    String uri = "assets/data/";
-    switch (index) {
-      case 0:
-        uri += "uncapped_tomestones.json";
-      case 1:
-        uri += "cracked_anthocluster.json";
-      case 2:
-        uri += "cracked_dendrocluster.json";
-      case 3:
-        uri += "cracked_stellacluster.json";
-      case 4:
-        uri += "cracked_planicluster.json";
-    }
-
-    return uri;
-  }
-
   Future<Item?> fetchBestItem(APIController apiController, int index) async {
     String dataURI = _getDataURI(index);
     List<dynamic> itemsFromJson =
-        await _readItemFromJson(dataURI) as List<dynamic>;
+        await _readItemsFromJson(dataURI) as List<dynamic>;
 
     String url = _generateUrl(itemsFromJson);
 

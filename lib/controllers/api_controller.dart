@@ -12,7 +12,7 @@ class APIController {
       return items;
     } else {
       throw Exception(
-          'Failed to load data. Status code:: ${response.statusCode}');
+          'Failed to load data. Status code: ${response.statusCode}');
     }
   }
 }
