@@ -27,6 +27,7 @@ class ResultDialog extends StatelessWidget {
               children: [
                 Text(
                   item.name,
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontSize: 24,
                     fontFamily: 'Anta',
