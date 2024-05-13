@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:xiv_best_price/controllers/api_controller.dart';
 import 'package:xiv_best_price/controllers/item_controller.dart';
 import '../components/api_button.dart';
+import '../components/carousel_card.dart';
 import '../components/result_dialog.dart';
 import '../model/item.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,8 +18,12 @@ class _HomePageState extends State<HomePage> {
   final ItemController _itemController = ItemController();
   final APIController _apiController = APIController();
 
+  int _carouselIndex = 0;
+
   void displayBestItem() {
-    _itemController.fetchBestItem(_apiController).then((Item bestItem) {
+    _itemController
+        .fetchBestItem(_apiController, _carouselIndex)
+        .then((Item bestItem) {
       showDialog(
           context: context,
           builder: (BuildContext context) => ResultDialog(item: bestItem));
@@ -45,20 +51,28 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              const Text(
-                "Allagan Tomestone of Causality",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  fontFamily: 'Anta',
-                ),
-              ),
-              SizedBox(
-                height: 100,
-                width: 100,
-                child: Image.asset('assets/images/Tomestone_Causality.png',
-                    fit: BoxFit.cover),
-              ),
+              CarouselSlider(
+                  items: [0, 1, 2, 3, 4].map((i) {
+                    return Builder(
+                      builder: (BuildContext context) {
+                        return CarouselCard(
+                          text: _itemController.currencies[i]["text"],
+                          url: _itemController.currencies[i]["url"],
+                        );
+                      },
+                    );
+                  }).toList(),
+                  options: CarouselOptions(
+                    height: 300.0,
+                    viewportFraction: 1,
+                    enableInfiniteScroll: false,
+                    initialPage: 0,
+                    onPageChanged: (index, reason) {
+                      setState(() {
+                        _carouselIndex = index;
+                      });
+                    },
+                  )),
               APIButton(
                 fetchAPI: displayBestItem,
               ),
