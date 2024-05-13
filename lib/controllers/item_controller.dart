@@ -37,15 +37,35 @@ class ItemController {
     return data["items"];
   }
 
-  Map<String, String> _findBestItemIdAndPrice(Map<String, dynamic> items) {
+  int _findMinimumPrice(String id, List<dynamic> items) {
+    int minimumPrice = 0;
+
+    for (var item in items) {
+      if (id == item["itemId"]) {
+        minimumPrice = int.parse(item["sellPrice"]);
+      }
+    }
+
+    return minimumPrice;
+  }
+
+  Map<String, String>? _findBestItemIdAndPrice(
+      Map<String, dynamic> items, List<dynamic> itemsFromJson) {
     var sorted = items.entries.toList()
       ..sort((a, b) => -a.value['listings'][0]['pricePerUnit']
           .compareTo(b.value['listings'][0]['pricePerUnit']));
 
-    return {
-      'id': sorted.first.key,
-      'price': sorted.first.value['listings'][0]['pricePerUnit'].toString()
-    };
+    for (final item in sorted) {
+      int minimumPrice = _findMinimumPrice(item.key, itemsFromJson);
+      if (item.value['listings'][0]['pricePerUnit'] > minimumPrice) {
+        return {
+          'id': item.key,
+          'price': item.value['listings'][0]['pricePerUnit'].toString()
+        };
+      }
+    }
+
+    return null;
   }
 
   Map<String, String> _findItemDetails(
@@ -105,18 +125,24 @@ class ItemController {
     return uri;
   }
 
-  Future<Item> fetchBestItem(APIController apiController, int index) async {
+  Future<Item?> fetchBestItem(APIController apiController, int index) async {
     String dataURI = _getDataURI(index);
-    List<dynamic> itemFromJson =
+    List<dynamic> itemsFromJson =
         await _readItemFromJson(dataURI) as List<dynamic>;
 
-    String url = _generateUrl(itemFromJson);
+    String url = _generateUrl(itemsFromJson);
 
     Map<String, dynamic> items = await apiController.fetchData(url);
 
-    Map<String, String> bestItemIdAndPrice = _findBestItemIdAndPrice(items);
+    Map<String, String>? bestItemIdAndPrice =
+        _findBestItemIdAndPrice(items, itemsFromJson);
+
+    if (bestItemIdAndPrice == null) {
+      return null;
+    }
+
     Map<String, String> bestItemDetails =
-        _findItemDetails(itemFromJson, bestItemIdAndPrice);
+        _findItemDetails(itemsFromJson, bestItemIdAndPrice);
     Item bestItem = _createItem(bestItemDetails);
 
     return bestItem;

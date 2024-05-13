@@ -23,10 +23,16 @@ class _HomePageState extends State<HomePage> {
   void displayBestItem() {
     _itemController
         .fetchBestItem(_apiController, _carouselIndex)
-        .then((Item bestItem) {
+        .then((Item? bestItem) {
+      bestItem ??= Item(
+          name: "No item is worth selling. Come back later!",
+          id: "-1",
+          price: -1,
+          url: "");
+
       showDialog(
           context: context,
-          builder: (BuildContext context) => ResultDialog(item: bestItem));
+          builder: (BuildContext context) => ResultDialog(item: bestItem!));
     });
   }
 
