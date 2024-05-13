@@ -3,32 +3,38 @@
         {
             "itemName": "Liquid Glass",
             "itemId": "39711",
-			"itemImageName": "Liquid_Glass.png"
+			"itemImageName": "Liquid_Glass.png",
+            "sellPrice" : "5"
         },
         {
             "itemName": "Thavnairian Flux",
             "itemId": "39712",
-			"itemImageName": "Thavnairian_Flux.png"
+			"itemImageName": "Thavnairian_Flux.png",
+            "sellPrice" : "5"
         },
         {
             "itemName": "Grinding Fluid",
             "itemId": "39713",
-			"itemImageName": "Grinding_Fluid.png"
+			"itemImageName": "Grinding_Fluid.png",
+            "sellPrice" : "5"
         },
         {
             "itemName": "Hannish Cotton",
             "itemId": "39714",
-			"itemImageName": "Hannish_Cotton.png"
+			"itemImageName": "Hannish_Cotton.png",
+            "sellPrice" : "4"
         },
         {
             "itemName": "Deinosuchus Skin",
             "itemId": "39715",
-			"itemImageName": "Deinosuchus_Skin.png"
+			"itemImageName": "Deinosuchus_Skin.png",
+            "sellPrice" : "5"
         },
         {
             "itemName": "Alche-mist",
             "itemId": "39716",
-			"itemImageName": "Alche-mist.png"
+			"itemImageName": "Alche-mist.png",
+            "sellPrice" : "5"
         }
     ]
 }

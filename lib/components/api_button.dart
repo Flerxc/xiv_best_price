@@ -17,7 +17,7 @@ class APIButton extends StatelessWidget {
             backgroundColor: MaterialStatePropertyAll(Colors.grey),
           ),
           child: const Text(
-            'CALCULATE',
+            'FIND BEST ITEM',
             style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,

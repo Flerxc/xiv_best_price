@@ -1,10 +1,12 @@
 # XIV Best Price Calculator
 
-## Item info
+## Context
 
-Current patch: 6.5
+This app uses the Universalis Market API to find which item sells for the highest price. For the moment, it only checks the market for the Jenova server. If no item has a market price higher than its' vendor sell price, a message will tell the user to come back later.
 
-Current materials item Level: 640
+## Items
+
+Game patch: 6.5
 
 Current Tomestone: Causality
 
@@ -15,10 +17,6 @@ Cracked Dendrocluster: MATERIA IX
 Cracked Stellacluster: MATERIA VIII
 
 Cracked Planicluster: MATERIA VII
-
-## Context
-
-This app uses the Universalis Market API to find which item sells for the highest price.
 
 ## License
 
