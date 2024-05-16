@@ -2,13 +2,13 @@
 
 ## Context
 
-This app uses the Universalis Market API to find which item sells for the highest price. For the moment, it only checks the market for the Jenova server. If no item has a market price higher than its' vendor sell price, a message will tell the user to come back later.
+This app utilizes the [Universalis Market](https://universalis.app) API to identify the item with the highest selling price. Currently, it exclusively scans the market for the Jenova server. If there isn't any item with a market price exceeding its vendor sell price, a message will prompt the user to return later.
 
 ## Installation
 
-Download on your phone one of the `apk` files from the [latest release](https://github.com/Flerxc/xiv_best_price/releases). If you do not know which one to choose, download `xiv_best_price-release.apk` and open it on your phone.
+On your phone, download one of the `apk` files from the [latest release](https://github.com/Flerxc/xiv_best_price/releases). If you're unsure which one to select, opt for `xiv_best_price-release.apk` and install it on your phone.
 
-For more information about apk installation, you can read [this article](https://www.lifewire.com/install-apk-on-android-4177185).
+For further details on apk installation, refer to [this article](https://www.lifewire.com/install-apk-on-android-4177185).
 
 ## Items
 
