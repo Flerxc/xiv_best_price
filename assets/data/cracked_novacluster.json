@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "itemName": "Piety Materia XII",
+            "itemId": "41770",
+            "itemImageName": "Materia_Yellow_XII.png",
+            "sellPrice" : "217"
+        },
+        {
+            "itemName": "Heavens' Eye Materia XII",
+            "itemId": "41771",
+            "itemImageName": "Materia_Red_XII.png",
+            "sellPrice" : "217"
+        },
+        {
+            "itemName": "Savage Aim Materia XII",
+            "itemId": "41772",
+            "itemImageName": "Materia_Red_XII.png",
+            "sellPrice" : "217"
+        },
+        {
+            "itemName": "Savage Might Materia XII",
+            "itemId": "41773",
+            "itemImageName": "Materia_Red_XII.png",
+            "sellPrice" : "217"
+        },
+        {
+            "itemName": "Battledance Materia XII",
+            "itemId": "41774",
+            "itemImageName": "Materia_Yellow_XII.png",
+            "sellPrice" : "217"
+        },
+        {
+            "itemName": "Quickarm Materia XII",
+            "itemId": "41781",
+            "itemImageName": "Materia_Purple_XII.png",
+            "sellPrice" : "217"
+        },
+        {
+            "itemName": "Quicktongue Materia XII",
+            "itemId": "41782",
+            "itemImageName": "Materia_Purple_XII.png",
+            "sellPrice" : "217"
+        }
+    ]
+}
