@@ -1,39 +1,39 @@
 {
     "items": [
         {
-            "itemName": "Liquid Glass",
-            "itemId": "39711",
-			"itemImageName": "Liquid_Glass.png",
+            "itemName": "Airbright Coolant",
+            "itemId": "44142",
+			"itemImageName": "Airbright_Coolant.png",
             "sellPrice" : "5"
         },
         {
-            "itemName": "Thavnairian Flux",
-            "itemId": "39712",
-			"itemImageName": "Thavnairian_Flux.png",
+            "itemName": "Glossy Dried Aether",
+            "itemId": "44146",
+			"itemImageName": "Glossy_Dried_Aether.png",
             "sellPrice" : "5"
         },
         {
-            "itemName": "Grinding Fluid",
-            "itemId": "39713",
-			"itemImageName": "Grinding_Fluid.png",
+            "itemName": "Pelupelu Yarn",
+            "itemId": "44144",
+			"itemImageName": "Pelupelu_Yarn.png",
+            "sellPrice" : "2"
+        },
+        {
+            "itemName": "Potsworn's Abrasive",
+            "itemId": "44143",
+			"itemImageName": "Potsworn's_Abrasive.png",
             "sellPrice" : "5"
         },
         {
-            "itemName": "Hannish Cotton",
-            "itemId": "39714",
-			"itemImageName": "Hannish_Cotton.png",
-            "sellPrice" : "4"
-        },
-        {
-            "itemName": "Deinosuchus Skin",
-            "itemId": "39715",
-			"itemImageName": "Deinosuchus_Skin.png",
+            "itemName": "Purussaurus Skin",
+            "itemId": "44145",
+			"itemImageName": "Purussaurus_Skin.png",
             "sellPrice" : "5"
         },
         {
-            "itemName": "Alche-mist",
-            "itemId": "39716",
-			"itemImageName": "Alche-mist.png",
+            "itemName": "Xbr'aal Varnish",
+            "itemId": "44141",
+			"itemImageName": "Xbr'aal_Varnish.png",
             "sellPrice" : "5"
         }
     ]
