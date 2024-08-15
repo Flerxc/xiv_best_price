@@ -12,9 +12,13 @@ For further details on apk installation, refer to [this article](https://www.lif
 
 ## Items
 
-Game patch: 6.5
+Game patch: 7.0
 
-Current Tomestone: Causality
+Current Tomestone: Aesthetics
+
+Cracked Novacluster: MATERIA XII
+
+Cracked Prismaticluster: MATERIA XI
 
 Cracked Anthocluster: MATERIA X
 

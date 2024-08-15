@@ -7,8 +7,16 @@ import 'package:xiv_best_price/model/item.dart';
 class ItemController {
   static const List<dynamic> _currencies = [
     {
-      'url': "assets/images/Tomestone_Causality.png",
-      'text': "Allagan Tomestone of Causality"
+      'url': "assets/images/Tomestone_Aesthetics.png",
+      'text': "Allagan Tomestone of Aesthetics"
+    },
+    {
+      'url': "assets/images/Cracked_Novacluster.png",
+      'text': "Cracked Novacluster"
+    },
+    {
+      'url': "assets/images/Cracked_Prismaticluster.png",
+      'text': "Cracked Prismaticluster"
     },
     {
       'url': "assets/images/Cracked_Anthocluster.png",
@@ -36,12 +44,16 @@ class ItemController {
       case 0:
         uri += "uncapped_tomestones.json";
       case 1:
-        uri += "cracked_anthocluster.json";
+        uri += "cracked_novacluster.json";
       case 2:
-        uri += "cracked_dendrocluster.json";
+        uri += "cracked_prismaticluster.json";
       case 3:
-        uri += "cracked_stellacluster.json";
+        uri += "cracked_anthocluster.json";
       case 4:
+        uri += "cracked_dendrocluster.json";
+      case 5:
+        uri += "cracked_stellacluster.json";
+      case 6:
         uri += "cracked_planicluster.json";
     }
 
