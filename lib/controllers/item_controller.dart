@@ -25,14 +25,6 @@ class ItemController {
     {
       'url': "assets/images/Cracked_Dendrocluster.png",
       'text': "Cracked Dendrocluster"
-    },
-    {
-      'url': "assets/images/Cracked_Stellacluster.png",
-      'text': "Cracked Stellacluster"
-    },
-    {
-      'url': "assets/images/Cracked_Planicluster.png",
-      'text': "Cracked Planicluster"
     }
   ];
 
@@ -51,10 +43,6 @@ class ItemController {
         uri += "cracked_anthocluster.json";
       case 4:
         uri += "cracked_dendrocluster.json";
-      case 5:
-        uri += "cracked_stellacluster.json";
-      case 6:
-        uri += "cracked_planicluster.json";
     }
 
     return uri;
