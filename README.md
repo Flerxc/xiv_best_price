@@ -24,10 +24,6 @@ Cracked Anthocluster: MATERIA X
 
 Cracked Dendrocluster: MATERIA IX
 
-Cracked Stellacluster: MATERIA VIII
-
-Cracked Planicluster: MATERIA VII
-
 ## License
 
 [MIT](LICENSE.txt)
