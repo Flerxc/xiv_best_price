@@ -24,6 +24,8 @@ Cracked Anthocluster: MATERIA X
 
 Cracked Dendrocluster: MATERIA IX
 
+Ventures: DISCIPLE OF WAR/MAGIC
+
 ## License
 
 [MIT](LICENSE.txt)

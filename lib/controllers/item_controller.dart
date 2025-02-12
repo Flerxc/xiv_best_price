@@ -25,6 +25,10 @@ class ItemController {
     {
       'url': "assets/images/Cracked_Dendrocluster.png",
       'text': "Cracked Dendrocluster"
+    },
+    {
+      'url': "assets/images/DoW_DoM.png",
+      'text': "Ventures\n(Disciple of War/Magic)"
     }
   ];
 
@@ -43,6 +47,8 @@ class ItemController {
         uri += "cracked_anthocluster.json";
       case 4:
         uri += "cracked_dendrocluster.json";
+      case 5:
+        uri += "dow_dom_ventures.json";
     }
 
     return uri;

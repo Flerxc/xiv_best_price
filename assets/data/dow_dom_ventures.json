@@ -1,0 +1,94 @@
+{
+    "items": [
+        {
+            "itemName": "Alexandrian Axe Beak Wing",
+            "itemId": "44072",
+            "itemImageName": "Alexandrian_Axe_Beak_Wing.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Br'aax Hide",
+            "itemId": "44055",
+            "itemImageName": "Br'aax_Hideg.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Branchbearer Fruit",
+            "itemId": "44065",
+            "itemImageName": "Branchbearer_Fruit.png",
+            "sellPrice": "3"
+        },
+        {
+            "itemName": "Gargantua Hide",
+            "itemId": "44057",
+            "itemImageName": "Gargantua_Hide.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Gomphotherium Skin",
+            "itemId": "44056",
+            "itemImageName": "Gomphotherium_Skin.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Lesser Apollyon Shell",
+            "itemId": "44069",
+            "itemImageName": "Lesser_Apollyon_Shell.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Megamaguey Pineapple",
+            "itemId": "44067",
+            "itemImageName": "Megamaguey_Pineapple.png",
+            "sellPrice": "7"
+        },
+        {
+            "itemName": "Nopalitender Tuna",
+            "itemId": "44066",
+            "itemImageName": "Nopalitender_Tuna.png",
+            "sellPrice": "3"
+        },
+        {
+            "itemName": "Poison Frog Secretions",
+            "itemId": "44068",
+            "itemImageName": "Poison_Frog_Secretions.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Rroneek Chuck",
+            "itemId": "44106",
+            "itemImageName": "Rroneek_Chuck.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Rroneek Fleece",
+            "itemId": "44027",
+            "itemImageName": "Rroneek_Fleece.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Swampmonk Thigh",
+            "itemId": "44064",
+            "itemImageName": "Swampmonk_Thigh.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Tumbleclaw Weeds",
+            "itemId": "44071",
+            "itemImageName": "Tumbleclaw_Weeds.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Ty'aitya Wingblade",
+            "itemId": "44070",
+            "itemImageName": "Ty'aitya_Wingblade.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Hammerhead Crocodile Skin",
+            "itemId": "44054",
+            "itemImageName": "Hammerhead_Crocodile_Skin.png",
+            "sellPrice": "5"
+        }
+    ]
+}
