@@ -29,7 +29,8 @@ class ItemController {
     {
       'url': "assets/images/DoW_DoM.png",
       'text': "Ventures\n(Disciple of War/Magic)"
-    }
+    },
+    {'url': "assets/images/btn.png", 'text': "Ventures\n(Botanist)"}
   ];
 
   List<dynamic> get currencies => _currencies;
@@ -49,6 +50,8 @@ class ItemController {
         uri += "cracked_dendrocluster.json";
       case 5:
         uri += "dow_dom_ventures.json";
+      case 6:
+        uri += "btn_ventures.json";
     }
 
     return uri;
