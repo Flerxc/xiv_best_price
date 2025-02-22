@@ -24,7 +24,7 @@ Cracked Anthocluster: MATERIA X
 
 Cracked Dendrocluster: MATERIA IX
 
-Ventures: DISCIPLE OF WAR/MAGIC - BOTANIST
+Ventures: DISCIPLE OF WAR/MAGIC - BOTANIST - MINER
 
 ## License
 
