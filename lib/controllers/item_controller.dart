@@ -7,8 +7,8 @@ import 'package:xiv_best_price/model/item.dart';
 class ItemController {
   static const List<dynamic> _currencies = [
     {
-      'url': "assets/images/Tomestone_Aesthetics.png",
-      'text': "Allagan Tomestone of Aesthetics"
+      'url': "assets/images/Tomestone_Heliometry.png",
+      'text': "Allagan Tomestone of Heliometry"
     },
     {
       'url': "assets/images/Cracked_Novacluster.png",
