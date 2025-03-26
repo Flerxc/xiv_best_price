@@ -3,38 +3,74 @@
         {
             "itemName": "Airbright Coolant",
             "itemId": "44142",
-			"itemImageName": "Airbright_Coolant.png",
-            "sellPrice" : "5"
+            "itemImageName": "Airbright_Coolant.png",
+            "sellPrice": "5"
         },
         {
             "itemName": "Glossy Dried Aether",
             "itemId": "44146",
-			"itemImageName": "Glossy_Dried_Aether.png",
-            "sellPrice" : "5"
+            "itemImageName": "Glossy_Dried_Aether.png",
+            "sellPrice": "5"
         },
         {
             "itemName": "Pelupelu Yarn",
             "itemId": "44144",
-			"itemImageName": "Pelupelu_Yarn.png",
-            "sellPrice" : "2"
+            "itemImageName": "Pelupelu_Yarn.png",
+            "sellPrice": "2"
         },
         {
             "itemName": "Potsworn's Abrasive",
             "itemId": "44143",
-			"itemImageName": "Potsworn's_Abrasive.png",
-            "sellPrice" : "5"
+            "itemImageName": "Potsworn's_Abrasive.png",
+            "sellPrice": "5"
         },
         {
             "itemName": "Purussaurus Skin",
             "itemId": "44145",
-			"itemImageName": "Purussaurus_Skin.png",
-            "sellPrice" : "5"
+            "itemImageName": "Purussaurus_Skin.png",
+            "sellPrice": "5"
         },
         {
             "itemName": "Xbr'aal Varnish",
             "itemId": "44141",
-			"itemImageName": "Xbr'aal_Varnish.png",
-            "sellPrice" : "5"
+            "itemImageName": "Xbr'aal_Varnish.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Cronopio Skin",
+            "itemId": "45987",
+            "itemImageName": "Cronopio_Skin.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Dichromatic Compound",
+            "itemId": "45989",
+            "itemImageName": "Dichromatic_Compound.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Shaaloani Coke",
+            "itemId": "45985",
+            "itemImageName": "Shaaloani_Coke.png",
+            "sellPrice": "10"
+        },
+        {
+            "itemName": "Diatryma Pelt",
+            "itemId": "45988",
+            "itemImageName": "Diatryma_Pelt.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Hydrophobic Preservative",
+            "itemId": "45984",
+            "itemImageName": "Hydrophobic_Preservative.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Neo Abrasive",
+            "itemId": "45986",
+            "itemImageName": "Neo_Abrasive.png",
+            "sellPrice": "2"
         }
     ]
 }
