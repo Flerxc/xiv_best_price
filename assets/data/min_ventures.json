@@ -1,0 +1,82 @@
+{
+    "items": [
+        {
+            "itemName": "Mountain Chromite Ore",
+            "itemId": "43992",
+            "itemImageName": "Mountain_Chromite_Ore.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Lar Ore",
+            "itemId": "44002",
+            "itemImageName": "Lar_Ore.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Mountain Rock Salt",
+            "itemId": "43982",
+            "itemImageName": "Mountain_Rock_Salt.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Raw Ihuykanite",
+            "itemId": "44003",
+            "itemImageName": "Raw_Ihuykanite.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Ruthenium Ore",
+            "itemId": "43993",
+            "itemImageName": "Ruthenium_Ore.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Cobalt Tungsten Ore",
+            "itemId": "43994",
+            "itemImageName": "Cobalt_Tungsten_Ore.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Raw Pink Beryl",
+            "itemId": "44004",
+            "itemImageName": "Raw_Pink_Beryl.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Yak T'el Spring Water",
+            "itemId": "44034",
+            "itemImageName": "Yak_T'el_Spring_Water.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Magnesia Powder",
+            "itemId": "44007",
+            "itemImageName": "Magnesia_Powder.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Titanium Gold Ore",
+            "itemId": "43995",
+            "itemImageName": "Titanium_Gold_Ore.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Raw Black Star",
+            "itemId": "44006",
+            "itemImageName": "Raw_Black_Star.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "White Gold Ore",
+            "itemId": "44005",
+            "itemImageName": "White_Gold_Ore.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Ra'Kaznar Ore",
+            "itemId": "43996",
+            "itemImageName": "Ra'Kaznar_Ore.png",
+            "sellPrice": "4"
+        }
+    ]
+}

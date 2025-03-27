@@ -1,0 +1,172 @@
+{
+    "items": [
+        {
+            "itemName": "Eucalyptus",
+            "itemId": "44042",
+            "itemImageName": "Eucalyptus.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Snow Cotton",
+            "itemId": "44024",
+            "itemImageName": "Snow_Cotton.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Ut'ohmu Tomato",
+            "itemId": "43978",
+            "itemImageName": "Ut'ohmu_Tomato.png",
+            "sellPrice": "7"
+        },
+        {
+            "itemName": "Ginseng Log",
+            "itemId": "44014",
+            "itemImageName": "Ginseng_Log.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Royal Maple Sap",
+            "itemId": "43979",
+            "itemImageName": "Royal_Maple_Sap.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Turali Aloe",
+            "itemId": "43989",
+            "itemImageName": "Turali_Aloe.png",
+            "sellPrice": "7"
+        },
+        {
+            "itemName": "Wild Ja Tiika Bananas",
+            "itemId": "43990",
+            "itemImageName": "Wild_Ja_Tiika_Bananas.png",
+            "sellPrice": "3"
+        },
+        {
+            "itemName": "Ceiba Log",
+            "itemId": "44015",
+            "itemImageName": "Ceiba_Log.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Kozama'uka Chamomile",
+            "itemId": "44040",
+            "itemImageName": "Kozama'uka_Chamomile.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Mountain Flax",
+            "itemId": "44025",
+            "itemImageName": "Mountain_Flax.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Shaaloani Oilseeds",
+            "itemId": "43980",
+            "itemImageName": "Shaaloani_Oilseeds.png",
+            "sellPrice": "7"
+        },
+        {
+            "itemName": "Sweet Kukuru Bean",
+            "itemId": "43991",
+            "itemImageName": "Sweet_Kukuru_Bean.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Turali Corn",
+            "itemId": "43981",
+            "itemImageName": "Turali_Corn.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Dark Mahogany Log",
+            "itemId": "44016",
+            "itemImageName": "Dark_Mahogany_Log.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Turali Pineapple",
+            "itemId": "43988",
+            "itemImageName": "Turali_Pineapple.png",
+            "sellPrice": "3"
+        },
+        {
+            "itemName": "Sarcenet",
+            "itemId": "44026",
+            "itemImageName": "Sarcenet.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "White Pepper",
+            "itemId": "43986",
+            "itemImageName": "White_Pepper.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Acacia Bark",
+            "itemId": "44052",
+            "itemImageName": "Acacia_Bark.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Acacia Log",
+            "itemId": "43929",
+            "itemImageName": "Acacia_Log.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Claro Walnut Log",
+            "itemId": "44018",
+            "itemImageName": "Claro_Walnut_Log.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Mesquite Beans",
+            "itemId": "43987",
+            "itemImageName": "Mesquite_Beans.png",
+            "sellPrice": "7"
+        },
+        {
+            "itemName": "Bell Pepper",
+            "itemId": "43984",
+            "itemImageName": "Bell_Pepper.png",
+            "sellPrice": "7"
+        },
+        {
+            "itemName": "Levinsilk",
+            "itemId": "44028",
+            "itemImageName": "Levinsilk.png",
+            "sellPrice": "2"
+        },
+        {
+            "itemName": "Wind Parsley",
+            "itemId": "44039",
+            "itemImageName": "Wind_Parsley.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Yyasulani Garlic",
+            "itemId": "43985",
+            "itemImageName": "Yyasulani_Garlic.png",
+            "sellPrice": "4"
+        },
+        {
+            "itemName": "Pearl Grass",
+            "itemId": "44043",
+            "itemImageName": "Pearl_Grass.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Windsbalm Bay Leaf",
+            "itemId": "44041",
+            "itemImageName": "Windsbalm_Bay_Leaf.png",
+            "sellPrice": "5"
+        },
+        {
+            "itemName": "Broccoli",
+            "itemId": "43983",
+            "itemImageName": "Broccoli.png",
+            "sellPrice": "7"
+        }
+    ]
+}

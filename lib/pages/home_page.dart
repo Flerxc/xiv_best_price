@@ -58,7 +58,10 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               CarouselSlider(
-                  items: [0, 1, 2, 3, 4].map((i) {
+                  items: [
+                    for (var i = 0; i < _itemController.currencies.length; i++)
+                      i
+                  ].map((i) {
                     return Builder(
                       builder: (BuildContext context) {
                         return CarouselCard(
