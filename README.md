@@ -12,9 +12,9 @@ For further details on apk installation, refer to [this article](https://www.lif
 
 ## Items
 
-Game patch: 7.2
+Game patch: 7.4
 
-Current Tomestone: Heliometry
+Current Tomestone: Mathematics
 
 Cracked Novacluster: MATERIA XII
 
