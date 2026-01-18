@@ -71,42 +71,6 @@
             "itemId": "45986",
             "itemImageName": "Neo_Abrasive.png",
             "sellPrice": "2"
-        },
-        {
-            "itemName": "Double Duracoat",
-            "itemId": "49224",
-            "itemImageName": "Double_Duracoat.png",
-            "sellPrice": "5"
-        },
-        {
-            "itemName": "Everkeep Resin",
-            "itemId": "49225",
-            "itemImageName": "Everkeep_Resin.png",
-            "sellPrice": "5"
-        },
-        {
-            "itemName": "Insulating Varnish",
-            "itemId": "49223",
-            "itemImageName": "Insulating_Varnish.png",
-            "sellPrice": "5"
-        },
-        {
-            "itemName": "Mastodon Pelt",
-            "itemId": "49226",
-            "itemImageName": "Mastodon_Pelt.png",
-            "sellPrice": "5"
-        },
-        {
-            "itemName": "Turali Pigment",
-            "itemId": "49227",
-            "itemImageName": "Turali_Pigment.png",
-            "sellPrice": "7"
-        },
-        {
-            "itemName": "Yollal Extract",
-            "itemId": "49228",
-            "itemImageName": "Yollal_Extract.png",
-            "sellPrice": "5"
         }
     ]
 }
