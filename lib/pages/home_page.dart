@@ -5,7 +5,7 @@ import '../components/api_button.dart';
 import '../components/carousel_card.dart';
 import '../components/result_dialog.dart';
 import '../model/item.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as cs;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -29,6 +29,8 @@ class _HomePageState extends State<HomePage> {
           id: "-1",
           price: -1,
           url: "");
+
+      if (!mounted) return;
 
       showDialog(
           context: context,
@@ -57,7 +59,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              CarouselSlider(
+              cs.CarouselSlider(
                   items: [
                     for (var i = 0; i < _itemController.currencies.length; i++)
                       i
@@ -71,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                       },
                     );
                   }).toList(),
-                  options: CarouselOptions(
+                  options: cs.CarouselOptions(
                     height: 300.0,
                     viewportFraction: 1,
                     enableInfiniteScroll: false,

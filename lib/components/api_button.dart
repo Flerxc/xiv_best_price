@@ -14,7 +14,7 @@ class APIButton extends StatelessWidget {
         child: TextButton(
           onPressed: () => fetchAPI(),
           style: const ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll(Colors.grey),
+            backgroundColor: WidgetStatePropertyAll(Colors.grey),
           ),
           child: const Text(
             'FIND BEST ITEM',
